@@ -170,6 +170,7 @@ section {
 
 .form-contact {
   width: 100%;
+  padding: 2em;
 }
 .input {
   padding: 1em;
@@ -178,6 +179,15 @@ section {
   border-radius: 10px;
   border: 1px solid var(--color-second) !important ;
 }
+
 .input:focus {
   outline: 4px solid var(--color-second) !important;
+}
+footer {
+  background-color: #333; /* Couleur de fond du footer */
+  color: #fff; /* Couleur du texte du footer */
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
 }

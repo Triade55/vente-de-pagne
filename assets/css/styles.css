@@ -1,0 +1,52 @@
+:root {
+  --color-first: #f77f00;
+  --color-second: #009e60;
+  --color-white: #ffff;
+}
+.ic-nav {
+  position: sticky;
+  top: 0%;
+  padding: 1em;
+  font-size: 20px;
+}
+.rockwell {
+  font-family: "Rockwell";
+}
+.mv-boli {
+  font-family: "MV Boli";
+}
+.bg-first {
+  background-color: var(--color-first);
+}
+.navtop {
+  text-align: center;
+  padding: 0.3em;
+  font-size: 2em;
+  background-color: var(--color-second);
+  color: black;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  font-family: "Rockwell";
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--color-white) !important;
+  border-bottom: 5px solid var(--color-second);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.boutik {
+  position: absolute;
+  top: 25%;
+  z-index: 999;
+}
+.nav-ic:hover {
+  width: 100%;
+  background-color: gray;
+  border: none;
+}
+.btn-primary {
+  background-color: var(--color-first) !important;
+}

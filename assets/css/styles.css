@@ -50,3 +50,15 @@
 .btn-primary {
   background-color: var(--color-first) !important;
 }
+.categorie {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+.text-categorie {
+}
+.color-box {
+  padding: 0.5em 1em;
+
+  border-radius: 50%;
+}

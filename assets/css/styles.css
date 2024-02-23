@@ -57,8 +57,58 @@
 }
 .text-categorie {
 }
-.color-box {
-  padding: 0.5em 1em;
+.couleur {
+  display: flex;
+  align-items: center;
+}
+#rouge:checked {
+  background-color: red;
+  border-color: red;
+}
+#rouge:checked + label {
+  color: red;
+}
+#blue:checked {
+  background-color: blue;
+  border-color: blue;
+}
+#blue:checked + label {
+  color: blue;
+}
+#green:checked {
+  background-color: green;
+  border-color: green;
+}
+#green:checked + label {
+  color: green;
+}
+#orange:checked {
+  background-color: orange;
+  border-color: orange;
+}
+#orange:checked + label {
+  color: orange;
+}
+#yellow:checked {
+  background-color: yellow;
+  border-color: yellow;
+}
+#yellow:checked + label {
+  color: yellow;
+}
+#black:checked {
+  background-color: black;
+  border-color: black;
+}
+#black:checked + label {
+  color: black;
+}
+.promo {
+  text-decoration: line-through;
+  font-style: italic;
+}
 
-  border-radius: 50%;
+.top-20 {
+  top: 10%;
+  left: 5%;
 }

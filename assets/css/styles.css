@@ -3,6 +3,51 @@
   --color-second: #009e60;
   --color-white: #ffff;
 }
+/*** config Start ***/
+
+/*** config end ***/
+/*** Topbar Start ***/
+.fixed-top {
+  transition: 0.5s;
+  background: var(--bs-white);
+  border: 0;
+}
+
+.topbar {
+  padding: 20px;
+  border-radius: 230px 100px;
+}
+
+.topbar .top-info {
+  font-size: 15px;
+  line-height: 0;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .top-link {
+  font-size: 15px;
+  line-height: 0;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .top-link a {
+  letter-spacing: 1px;
+}
+
+.topbar .top-link a small:hover {
+  color: var(--bs-secondary) !important;
+  transition: 0.5s;
+}
+
+.topbar .top-link a small:hover i {
+  color: var(--bs-primary) !important;
+}
+/*** Topbar End ***/
+
 .ic-nav {
   position: sticky;
   top: 0%;
@@ -18,6 +63,7 @@
 .bg-first {
   background-color: var(--color-first);
 }
+
 .navtop {
   text-align: center;
   padding: 0.3em;
@@ -32,7 +78,22 @@
 .nav-link:focus,
 .nav-link.active {
   color: var(--color-white) !important;
-  border-bottom: 5px solid var(--color-second);
+  border-bottom: 5px solid var(--color-second) !important;
+}
+
+.tabs.nav-link:hover {
+  color: var(--color-first) !important;
+  background-color: var(--color-second);
+  border-bottom: 5px solid var(--color-second) !important;
+}
+.tabs.nav-link.active {
+  color: var(--color-first) !important;
+  background-color: transparent !important;
+  border-bottom: 5px solid var(--color-second) !important;
+}
+.title-section {
+  text-decoration: underline;
+  color: ;
 }
 .dropdown:hover .dropdown-menu {
   display: block;

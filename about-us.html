@@ -22,171 +22,367 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div class="navtop container border">CLOTHIVOIR</div>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-first fs-3 p-2 mv-boli sticky-top"
-    >
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Toggle button -->
-        <button
-          data-mdb-collapse-init
-          class="navbar-toggler"
-          type="button"
-          data-mdb-target="#navbarCenteredExample"
-          aria-controls="navbarCenteredExample"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
+    <div class="bg-info sticky-top">
+      <div class="container topbar bg-success d-none d-lg-block">
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2">
+            <small class="me-3"
+              ><i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+              <a href="#" class="text-white"
+                >Yop , Niangon sud à gauche</a
+              ></small
+            >
+            <small class="me-3"
+              ><i class="fas fa-envelope me-2 text-secondary"></i
+              ><a href="#" class="text-white">Email@Example.com</a></small
+            >
+          </div>
+          <div class="top-link pe-2">
+            <a href="#" class="text-white"
+              ><small class="text-white mx-2">Privacy Policy</small>/</a
+            >
+            <a href="#" class="text-white"
+              ><small class="text-white mx-2">Terms of Use</small>/</a
+            >
+            <a href="#" class="text-white"
+              ><small class="text-white ms-2">Sales and Refunds</small></a
+            >
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light fs-2 p-3">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
 
-        <!-- Collapsible wrapper -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarCenteredExample"
-        >
-          <!-- Left links -->
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >Acceuil</a
-              >
-            </li>
-
-            <li class="nav-item dropdown">
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCenteredExample"
+          >
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+              <img
+                src="assets/img/logo.png"
+                height="50"
+                alt="MDB Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0 rockwell">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about-us.html">About-us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="boutik.html">Boutique</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacte</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center h4">
+              <!-- Coeur -->
               <a
                 data-mdb-dropdown-init
-                class="nav-link"
-                href="about-us.html"
-                id="navbarDropdownMenuLink"
-                role="button"
+                class="text-reset me-3"
+                href="#"
                 aria-expanded="false"
               >
-                About-us
+                <i class="fas fa-heart"></i>
+                <span class="badge rounded-pill badge-notification bg-danger"
+                  >1</span
+                >
               </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
+              <!-- Pannier -->
+              <a
+                data-mdb-dropdown-init
+                class="text-reset me-3"
+                href="#"
+                aria-expanded="false"
               >
-                <li>
-                  <a class="dropdown-item" href="about.html"
-                    >&Aacute; propos de nous
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="testimonial.html"
-                    >testimonial</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="FAQs.html">FAQs</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="boutik.html" id="boutik">boutique</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" id="contact">Contact</a>
-            </li>
-          </ul>
-          <!-- Left links -->
+                <i class="fas fa-cart-shopping"></i>
+                <span class="badge rounded-pill badge-notification bg-danger"
+                  >1</span
+                >
+              </a>
+            </div>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
         </div>
-        <!-- Collapsible wrapper -->
-      </div>
-      <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
+        <!-- Container wrapper -->
+      </nav>
+    </div>
 
     <!-- Jumbotron -->
-    <div class="p-5 text-center bg-body-tertiary mv-boli" id="">
-      <h1 class="mb-3">Voulez vous des renseignement sur notre boutique?</h1>
-      <h4 class="mb-3">Joignez-nous facilement</h4>
+    <div class="p-5 text-center bg-secondary mv-boli" id="">
+      <h1 class="mb-3">Notre Héritage Textile</h1>
+      <h4 class="mb-3">
+        Tisser des Histoires, Créer des Liens - L'Art du Pagne Redéfini
+      </h4>
     </div>
     <!-- Jumbotron -->
-    <section class="container py-4">
-      <div class="row">
-        <div class="col-8">
-          <h2>Formulaire de contact</h2>
-          <form style="width: 26rem">
-            <!-- Name input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="text" id="Nom" class="form-control" />
-              <label class="form-label" for="Nom">Nom & Prenom</label>
-            </div>
-
-            <!-- Email input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="email" id="email" class="form-control" />
-              <label class="form-label" for="email">Adresse E-mail </label>
-            </div>
-
-            <!-- Message input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-              <textarea class="form-control" id="Message" rows="4"></textarea>
-              <label class="form-label" for="Message">Message</label>
-            </div>
-
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input
-                class="form-check-input me-2"
-                type="checkbox"
-                value=""
-                id="form4Example4"
-                checked
-              />
-              <label class="form-check-label" for="form4Example4">
-                Envoyer moi la copie de se Message
-              </label>
-            </div>
-
-            <!-- Submit button -->
-            <button
-              data-mdb-ripple-init
-              type="button"
-              class="btn btn-primary btn-block mb-4"
-            >
-              Envoyer
-            </button>
-          </form>
+    <section class="container-fluid py-4 my-4 bg-info">
+      <div class="row d-flex align-items-center">
+        <div class="col-xl-6 col-12">
+          <img src="assets/img/hero.jpg" class="w-100 rounded shadow" alt="" />
         </div>
-        <div class="col-4">
-          <h2>Nos coordonnées</h2>
-          <div class="card mb-2">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-between">
-                Localisation
-                <i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>
-              </h5>
-              <p class="card-text">Yop , Niangon sud à gauche terminus 27</p>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-between">
-                Telephone
-                <i class="fa fa-2x fa-phone" aria-hidden="true"></i>
-              </h5>
-              <p class="card-text">+225 0768280690</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-between">
-                Address e-mail
-                <i class="fa fa-2x fa-envelope"></i>
-              </h5>
-              <p class="card-text">Vangajeanulrich@gmail.com</p>
-            </div>
+        <div class="col-xl-6 col-12 text-center text-light">
+          <h1>Qui sommes nous ?</h1>
+          <div>
+            Nous sommes bien plus qu'une simple boutique de pagnes ; nous sommes
+            les gardiens passionnés d'une tradition textile riche, façonnée par
+            des décennies d'histoire et d'artisanat. À travers nos collections,
+            nous célébrons l'essence même du tissage, fusionnant des motifs
           </div>
         </div>
       </div>
     </section>
+    <section class="container-fluid py-4 my-4 bg-light">
+      <!-- Tabs navs -->
+      <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            data-mdb-tab-init
+            class="tabs nav-link active"
+            id="ex3-tab-1"
+            href="#ex3-tabs-1"
+            role="tab"
+            aria-controls="ex3-tabs-1"
+            aria-selected="true"
+            >Pourquoi nous choisir ?</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            data-mdb-tab-init
+            class="tabs nav-link"
+            id="ex3-tab-2"
+            href="#ex3-tabs-2"
+            role="tab"
+            aria-controls="ex3-tabs-2"
+            aria-selected="false"
+            >Temoignages</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            data-mdb-tab-init
+            class="tabs nav-link"
+            id="ex3-tab-3"
+            href="#ex3-tabs-3"
+            role="tab"
+            aria-controls="ex3-tabs-3"
+            aria-selected="false"
+            >Questions fréquement posé</a
+          >
+        </li>
+      </ul>
+      <!-- Tabs navs -->
+
+      <!-- Tabs content -->
+      <div class="tab-content" id="ex2-content">
+        <div
+          class="tab-pane fade show active"
+          id="ex3-tabs-1"
+          role="tabpanel"
+          aria-labelledby="ex3-tab-1"
+        >
+          <div class="row">
+            <h1 class="col-12 my-4 text-center title-section">
+              POURQUOI NOUS CHOISIR ?
+            </h1>
+            <div class="col-xl-6 col-12">
+              <img
+                src="assets/img/pagne-baoule.jpg"
+                class="w-100"
+                style="height: 100vh"
+              />
+            </div>
+            <div class="col-xl-6 col-12">
+              <h1>Choisir notre entreprise</h1>
+              va bien au-delà de l'acte d'achat ; c'est opter pour une
+              expérience exceptionnelle et un engagement envers la qualité et
+              l'unicité. Nous nous distinguons par la fusion de l'artisanat
+              traditionnel avec une approche contemporaine, offrant des pagnes
+              qui racontent des histoires uniques. La qualité de nos matériaux,
+              associée à une attention méticuleuse aux détails, garantit que
+              chaque pièce que vous choisissez est un véritable chef-d'œuvre. De
+              plus, notre engagement envers la durabilité et notre impact social
+              positif font de nous un choix éthique. Nous croyons en la création
+              de liens durables avec nos clients, en offrant non seulement des
+              produits exceptionnels mais aussi une immersion dans l'héritage
+              culturel que nous chérissons. Optez pour nous, non seulement pour
+              un pagne, mais pour une expérience qui transcende la mode pour
+              devenir une célébration de la diversité et de la beauté
+              intemporelle.
+              <h1 class="my-2">Nos Partenaires</h1>
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="https://picsum.photos/200/150"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="https://picsum.photos/199/151"
+                    alt=""
+                    class="col w-100"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="https://picsum.photos/201/149"
+                    alt=""
+                    class="col w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="ex3-tabs-2"
+          role="tabpanel"
+          aria-labelledby="ex3-tab-2"
+        >
+          <div class="row">
+            <div class="col-xl-6 col-12">
+              <img
+                src="assets/img/pagne-baoule.jpg"
+                alt=""
+                srcset=""
+                class="w-100"
+              />
+            </div>
+            <div class="col-xl-6 col-12 border">
+              <div
+                class="accordion accordion-borderless"
+                id="accordionFlushExampleX"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOneX">
+                    <button
+                      data-mdb-collapse-init
+                      class="accordion-button"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#flush-collapseOneX"
+                      aria-expanded="true"
+                      aria-controls="flush-collapseOneX"
+                    >
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOneX"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="flush-headingOneX"
+                    data-mdb-parent="#accordionFlushExampleX"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the
+                      <code>.accordion-flush</code> class. This is the first
+                      item's accordion body.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwoX">
+                    <button
+                      data-mdb-collapse-init
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#flush-collapseTwoX"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwoX"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwoX"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwoX"
+                    data-mdb-parent="#accordionFlushExampleX"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the
+                      <code>.accordion-flush</code> class. This is the second
+                      item's accordion body. Let's imagine this being filled
+                      with some actual content.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThreeX">
+                    <button
+                      data-mdb-collapse-init
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#flush-collapseThreeX"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThreeX"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThreeX"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThreeX"
+                    data-mdb-parent="#accordionFlushExampleX"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the
+                      <code>.accordion-flush</code> class. This is the third
+                      item's accordion body. Nothing more exciting happening
+                      here in terms of content, but just filling up the space to
+                      make it look, at least at first glance, a bit more
+                      representative of how this would look in a real-world
+                      application.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="ex3-tabs-3"
+          role="tabpanel"
+          aria-labelledby="ex3-tab-3"
+        >
+          Tab 3 content
+        </div>
+      </div>
+      <!-- Tabs content -->
+    </section>
+
     <div id="includeFooter"></div>
 
     <!-- MDB -->
